@@ -1,35 +1,42 @@
 import React, { useState, useEffect } from 'react'
+import questions from './question.json'
 
-const Timer = ()=>{
-    const[time, setTime] = useState(5);
-    const[displayTime, setDisplayTime] = useState('');
+const Timer = ({ isOver }) => {
+    const[time, setTime] = useState(questions.length*10);
+    //const [time, setTime] = useState(5);
+    const [displayTime, setDisplayTime] = useState('');
 
-    useEffect(()=>{
-        let id = setInterval(() =>{
+    useEffect(() => {
+        let id = setInterval(() => {
             setTime(timee => {
-                if(timee <= 0){
+                if (timee <= 0) {
                     clearInterval(id);
                     return 0;
                 }
-                return timee-1;
+                return timee - 1;
             })
-        },1000);
+        }, 1000);
 
-        return() =>{
+        return () => {
             clearInterval(id);
         }
-    },[]);
+    }, []);
 
-    useEffect(()=>{
-        let formatedTime = (`${(Math.floor(time/60)).toString().padStart(2,0)}
-        : ${(time % 60).toString().padStart(2,0)}`);
+    useEffect(() => {
+        if (time === 0) {
+            isOver(true);
+        }
+
+        let formatedTime = (`${(Math.floor(time / 60)).toString().padStart(2, 0)}
+        : ${(time % 60).toString().padStart(2, 0)}`);
 
         setDisplayTime(formatedTime);
-    },[time]);
+    }, [time,isOver]);
 
-  return (
-    <h1>Time Left : {displayTime}</h1>
-  )
+    return (
+        <h2>Time Left : {displayTime}</h2>
+    )
 }
 
 export default Timer
+
