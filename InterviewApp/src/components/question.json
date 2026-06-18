@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the output of typeof null?",
+    "options": ["null", "undefined", "object", "number"],
+    "answer": "object"
+  },
+  {
+    "question": "Which method is used to add an element at the end of an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "answer": "push()"
+  },
+  {
+    "question": "What is the output of 2 + '2'?",
+    "options": ["4", "22", "NaN", "undefined"],
+    "answer": "22"
+  },
+  {
+    "question": "Which keyword is used to declare a block-scoped variable?",
+    "options": ["var", "let", "const", "Both let and const"],
+    "answer": "Both let and const"
+  },
+  {
+    "question": "What does NaN stand for?",
+    "options": [
+      "Not a Number",
+      "No assigned Number",
+      "Negative and Null",
+      "None of the above"
+    ],
+    "answer": "Not a Number"
+  },
+  {
+    "question": "Which array method removes the last element?",
+    "options": ["shift()", "pop()", "slice()", "splice()"],
+    "answer": "pop()"
+  },
+  {
+    "question": "What is the output of Boolean('false')?",
+    "options": ["false", "undefined", "true", "NaN"],
+    "answer": "true"
+  },
+  {
+    "question": "Which operator checks both value and type?",
+    "options": ["==", "=", "===", "!="],
+    "answer": "==="
+  },
+  {
+    "question": "What is the output of [] + []?",
+    "options": ["[]", "0", "''", "NaN"],
+    "answer": "''"
+  },
+  {
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.object()",
+      "JSON.convert()"
+    ],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "What is the output of '5' - 2?",
+    "options": ["52", "3", "NaN", "undefined"],
+    "answer": "3"
+  },
+  {
+    "question": "Which loop is guaranteed to run at least once?",
+    "options": ["for", "while", "do...while", "forEach"],
+    "answer": "do...while"
+  },
+  {
+    "question": "What is a closure?",
+    "options": [
+      "A function with access to its outer scope",
+      "A closed loop",
+      "A JavaScript object",
+      "A callback function"
+    ],
+    "answer": "A function with access to its outer scope"
+  },
+  {
+    "question": "Which method creates a new array without modifying the original?",
+    "options": ["splice()", "push()", "slice()", "pop()"],
+    "answer": "slice()"
+  },
+  {
+    "question": "What is the output of typeof undefined?",
+    "options": ["null", "undefined", "object", "string"],
+    "answer": "undefined"
+  },
+  {
+    "question": "Can JSON be assigned to a variable in JavaScript?",
+    "options": [
+        "No, JSON can never be assigned to a variable",
+        "Yes, JSON can be stored as a string in a variable",
+        "Only objects can be assigned to variables",
+        "JSON automatically becomes a function when assigned"
+    ],
+    "answer": "Yes, JSON can be stored as a string in a variable"
+  }
+]
